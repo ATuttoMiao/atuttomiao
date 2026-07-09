@@ -3,76 +3,185 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Tutto Miao - Legnano</title>
+<title>A Tutto Miao | Pet shop a Legnano per cani e gatti</title>
 
 <style>
+:root{
+  --bordeaux:#7A2940;
+  --verde:#7E9472;
+  --panna:#F7F4EF;
+  --bianco:#FFFFFF;
+  --testo:#2b2b2b;
+  --rosa:#EAD6CF;
+}
+
+*{
+  box-sizing:border-box;
+}
+
 body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#F7F4EF;
-color:#2b2b2b;
-text-align:center;
+  font-family:Arial,sans-serif;
+  margin:0;
+  background:var(--panna);
+  color:var(--testo);
+  text-align:center;
 }
 
 header{
-background:#7A2940;
-color:white;
-padding:42px 20px;
+  background:var(--bordeaux);
+  color:white;
+  padding:55px 22px 45px;
+}
+
+.logo{
+  max-width:220px;
+  margin-bottom:28px;
 }
 
 h1{
-font-size:42px;
-margin:0;
+  font-size:38px;
+  line-height:1.12;
+  margin:0 auto 18px;
+  max-width:780px;
 }
 
-header p{
-font-size:20px;
-line-height:1.4;
+h2{
+  font-size:30px;
+  line-height:1.2;
+  margin:0 0 24px;
 }
 
-.slogan{
-font-style:italic;
-margin-top:14px;
-font-size:18px;
+h3{
+  margin:0 0 8px;
+  font-size:21px;
+}
+
+p{
+  font-size:18px;
+  line-height:1.5;
+  margin:0 auto 16px;
+  max-width:720px;
+}
+
+.hero-subtitle{
+  font-size:22px;
+  font-style:italic;
+  margin-top:10px;
+}
+
+.hero-text{
+  font-size:17px;
+  opacity:.95;
 }
 
 .section{
-padding:28px 20px;
+  padding:42px 20px;
+}
+
+.section-white{
+  background:var(--bianco);
 }
 
 .button{
-display:block;
-background:#7A2940;
-color:white;
-text-decoration:none;
-padding:18px;
-margin:14px auto;
-max-width:340px;
-border-radius:16px;
-font-size:18px;
-font-weight:bold;
+  display:block;
+  background:var(--bordeaux);
+  color:white;
+  text-decoration:none;
+  padding:18px 22px;
+  margin:14px auto;
+  max-width:360px;
+  border-radius:18px;
+  font-size:18px;
+  font-weight:bold;
 }
 
 .button-green{
-background:#7E9472;
+  background:var(--verde);
+}
+
+.button-light{
+  background:white;
+  color:var(--bordeaux);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+  max-width:920px;
+  margin:0 auto;
 }
 
 .card{
-background:white;
-margin:14px auto;
-padding:20px;
-max-width:520px;
-border-radius:18px;
-box-shadow:0 2px 8px rgba(0,0,0,.08);
-font-size:18px;
+  background:white;
+  padding:22px;
+  border-radius:20px;
+  box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.card p{
+  font-size:16px;
+  margin-bottom:0;
+}
+
+.small-title{
+  font-size:15px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:var(--bordeaux);
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.category-button{
+  display:block;
+  background:var(--bordeaux);
+  color:white;
+  text-decoration:none;
+  padding:22px;
+  margin:14px auto;
+  max-width:560px;
+  border-radius:20px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.review{
+  font-style:italic;
+}
+
+.contact-box{
+  background:var(--rosa);
+  padding:28px 20px;
+  border-radius:22px;
+  max-width:820px;
+  margin:0 auto;
 }
 
 footer{
-background:#7E9472;
-color:white;
-padding:25px;
-margin-top:25px;
-line-height:1.5;
+  background:var(--verde);
+  color:white;
+  padding:32px 20px;
+  line-height:1.6;
+  font-size:16px;
+}
+
+footer a{
+  color:white;
+}
+
+@media (min-width:768px){
+  .grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  h1{
+    font-size:52px;
+  }
+
+  .section{
+    padding:64px 28px;
+  }
 }
 </style>
 </head>
@@ -80,121 +189,176 @@ line-height:1.5;
 <body>
 
 <header>
-<img src="IMG_2434.png"
-alt="Logo A Tutto Miao"
-style="max-width:220px; margin-bottom:20px;">
+  <img src="IMG_2434.png" alt="Logo A Tutto Miao Pet Shop" class="logo">
 
-  
-<h1>A Tutto Miao</h1>
+  <h1>Ti aiutiamo a scegliere ciò che è davvero adatto al tuo cane o gatto.</h1>
 
-<p>
-Per chi considera il proprio cane o gatto parte della famiglia.
-</p>
+  <p class="hero-subtitle">
+    Anche quando significa consigliarti di non comprare.
+  </p>
 
-<div class="slogan">
-Qui i pet sono famiglia 🐾
-</div>
+  <p class="hero-text">
+    Pet shop a Legnano specializzato in alimentazione, premi, snack e accessori per gatti e cani di piccola taglia.
+  </p>
+
+  <a class="button button-green"
+  href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20ricevere%20informazioni%20su%20A%20Tutto%20Miao">
+  📲 Scrivimi su WhatsApp
+  </a>
+
+  <a class="button button-light"
+  href="#contatti">
+  📍 Vieni in negozio
+  </a>
 </header>
 
-<div class="section">
+<section class="section">
+  <h2>Perché scegliere A Tutto Miao?</h2>
 
-<a class="button"
-href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20ricevere%20informazioni%20su%20A%20Tutto%20Miao">
-📲 Scrivimi su WhatsApp
-</a>
+  <div class="grid">
+    <div class="card">
+      <h3>❤️ Consigli onesti</h3>
+      <p>Se un prodotto non è adatto al tuo cane o al tuo gatto, te lo diciamo.</p>
+    </div>
 
-<a class="button button-green"
-href="https://maps.google.com/?q=Via+XXIX+Maggio+20+Legnano">
-📍 Vieni in negozio
-</a>
+    <div class="card">
+      <h3>🐾 Scelta personalizzata</h3>
+      <p>Ogni animale è diverso. Per questo partiamo sempre dalle sue esigenze.</p>
+    </div>
 
-<a class="button"
-href="https://www.instagram.com/atuttomiaolegnanopetshop">
-📸 Seguici su Instagram
-</a>
+    <div class="card">
+      <h3>💬 Ti seguiamo nel tempo</h3>
+      <p>Il nostro lavoro non finisce con l’acquisto. Restiamo disponibili anche dopo.</p>
+    </div>
 
-</div>
+    <div class="card">
+      <h3>✔️ Prodotti scelti con criterio</h3>
+      <p>Non riempiamo gli scaffali a caso. Ogni prodotto entra per un motivo.</p>
+    </div>
 
-<div class="section">
+    <div class="card">
+      <h3>🐱 Come per i nostri animali</h3>
+      <p>Scegliamo con la stessa attenzione che useremmo per i nostri cani e gatti.</p>
+    </div>
 
-<h2>Perché scegliere A Tutto Miao?</h2>
+    <div class="card">
+      <h3>🏡 Marchi affidabili</h3>
+      <p>Preferiamo aziende serie, prodotti validi e consigli che possiamo sostenere.</p>
+    </div>
+  </div>
+</section>
 
-<div class="card">
-🐱 Specializzazione gatto
-</div>
+<section class="section section-white">
+  <div class="small-title">Chi sono</div>
+  <h2>Ciao, sono Sabina.</h2>
 
-<div class="card">
-🐶 Alimentazione naturale selezionata
-</div>
+  <p>
+    Ho aperto A Tutto Miao con un’idea semplice: offrire prodotti di qualità e un consiglio sincero a chi ama davvero il proprio animale.
+  </p>
 
-<div class="card">
-🚚 Consegna a domicilio a Legnano
-</div>
+  <p>
+    Qui non sei un numero. Ti ascoltiamo, capiamo le esigenze del tuo cane o del tuo gatto e ti aiutiamo a scegliere con più serenità.
+  </p>
 
-<div class="card">
-💬 Consulenza personalizzata
-</div>
+  <a class="button"
+  href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20conoscere%20meglio%20A%20Tutto%20Miao">
+  Scopri il negozio
+  </a>
+</section>
 
-<div class="card">
-🏡 Oltre 8 anni di esperienza in negozio
-</div>
+<section class="section">
+  <h2>🐾 Cosa stai cercando oggi?</h2>
 
-</div>
+  <a class="category-button"
+  href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20un%20consiglio%20sull'alimentazione%20per%20il%20mio%20gatto">
+  🐱 Alimentazione gatto
+  </a>
 
-<div class="section">
+  <a class="category-button"
+  href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20un%20consiglio%20sull'alimentazione%20per%20il%20mio%20cane">
+  🐶 Alimentazione cane
+  </a>
 
-<h2>Orari</h2>
+  <a class="category-button"
+  href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20informazioni%20su%20premi%20e%20snack">
+  🦴 Premi e snack
+  </a>
 
-<div class="card">
-Martedì<br>
-10:30 - 13:00<br>
-15:30 - 19:30
-</div>
+  <a class="category-button"
+  href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20informazioni%20sugli%20accessori">
+  🎾 Accessori
+  </a>
 
-<div class="card">
-Mercoledì - Sabato<br>
-10:00 - 13:00<br>
-15:30 - 19:30
-</div>
+  <a class="category-button"
+  href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20sapere%20quali%20novità%20sono%20arrivate%20in%20negozio">
+  ✨ Novità
+  </a>
+</section>
 
-</div>
+<section class="section section-white">
+  <h2>Cosa dicono i nostri clienti</h2>
 
-<div class="section">
+  <div class="grid">
+    <div class="card review">
+      “Finalmente qualcuno che mi aiuta a scegliere senza spingere sulla vendita.”
+    </div>
 
-<h2>🐾 Cosa stai cercando oggi?</h2>
+    <div class="card review">
+      “Si ricordano del mio cane e mi consigliano sempre con attenzione.”
+    </div>
 
-<a class="button"
-href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20informazioni%20sulle%20crocchette%20per%20gatti">
-🐱 Crocchette Gatto
-</a>
+    <div class="card review">
+      “Un negozio di fiducia, dove sai di essere ascoltata davvero.”
+    </div>
+  </div>
+</section>
 
-<a class="button"
-href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20informazioni%20sull'umido%20per%20gatti">
-🐱 Umido Gatto
-</a>
+<section class="section" id="contatti">
+  <h2>Contatti e orari</h2>
 
-<a class="button"
-href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20informazioni%20sulle%20crocchette%20per%20cani">
-🐶 Crocchette Cane
-</a>
+  <div class="contact-box">
+    <p><strong>A Tutto Miao</strong><br>
+    Via XXIX Maggio 20 • Legnano</p>
 
-<a class="button"
-href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20informazioni%20sull'umido%20per%20cani">
-🐶 Umido Cane
-</a>
+    <p>
+    <strong>Martedì</strong><br>
+    10:30 – 13:00<br>
+    15:30 – 19:30
+    </p>
 
-<a class="button"
-href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20informazioni%20sugli%20accessori">
-🎾 Accessori
-</a>
+    <p>
+    <strong>Mercoledì – Sabato</strong><br>
+    10:00 – 13:00<br>
+    15:30 – 19:30
+    </p>
 
-</div>
+    <p>
+    <strong>Domenica e Lunedì</strong><br>
+    Chiuso
+    </p>
+
+    <a class="button button-green"
+    href="https://wa.me/393921187250?text=Ciao%20Sabina,%20vorrei%20ricevere%20informazioni%20su%20A%20Tutto%20Miao">
+    📲 Scrivimi su WhatsApp
+    </a>
+
+    <a class="button"
+    href="https://maps.google.com/?q=Via+XXIX+Maggio+20+Legnano">
+    📍 Apri Google Maps
+    </a>
+
+    <a class="button"
+    href="https://www.instagram.com/atuttomiaolegnanopetshop">
+    📸 Seguici su Instagram
+    </a>
+  </div>
+</section>
 
 <footer>
-A Tutto Miao<br>
-Via XXIX Maggio 20 • Legnano<br>
-Bimbi pelosi viziati e coccolati<br><br>
-P.I. IT03648030124
+  <strong>A Tutto Miao</strong><br>
+  Pet shop per cani e gatti a Legnano<br>
+  Via XXIX Maggio 20 • Legnano<br>
+  P.I. IT03648030124
 </footer>
 
 </body>

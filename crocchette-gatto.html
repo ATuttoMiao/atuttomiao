@@ -1,20 +1,153 @@
-<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Crocchette gatto | A Tutto Miao</title><style>
-:root{--cream:#f7f2ea;--cream2:#efe6d9;--card:#fffdf9;--burgundy:#7a3f52;--burgundy-dark:#4b2a34;--sage:#798066;--sage-soft:#dfe4d5;--pink:#e9c7cc;--text:#3f3435;--muted:#746a67;--shadow:0 7px 22px rgba(82,58,49,.08)}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:linear-gradient(180deg,var(--cream),#fbf8f3);color:var(--text)}
-.wrap{max-width:780px;margin:0 auto;padding:26px 14px 52px}.hero{text-align:center;padding:8px 8px 22px}.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-weight:800}h1{font-family:Georgia,"Times New Roman",serif;font-size:34px;line-height:1.05;margin:8px 0;color:var(--burgundy-dark)}.hero p{margin:0;color:var(--muted);font-size:15px}
-.brand{margin:22px 0 34px}.brand-head{display:flex;align-items:end;justify-content:space-between;padding:0 6px 9px;border-bottom:2px solid var(--pink);margin-bottom:12px}.brand h2{font-family:Georgia,"Times New Roman",serif;font-size:27px;margin:0;color:var(--burgundy-dark)}.brand-sub{font-size:12px;color:var(--sage);font-weight:700;text-transform:uppercase;letter-spacing:.08em}.group-label{margin:18px 7px 8px;font-size:13px;color:var(--sage);font-weight:850;text-transform:uppercase;letter-spacing:.09em}
-.product{position:relative;background:var(--card);border:1px solid #eadfd4;border-radius:22px;padding:19px 126px 19px 19px;margin:12px 0;min-height:128px;box-shadow:var(--shadow)}.brandmini{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--burgundy);font-weight:850;margin-bottom:5px}.name{font-family:Georgia,"Times New Roman",serif;font-size:19px;font-weight:800;color:var(--burgundy-dark);line-height:1.15}.meta{font-size:12px;color:var(--sage);font-weight:800;margin-top:5px}.ingredients{font-size:15px;color:#514647;font-style:normal;line-height:1.55;margin-top:8px;font-weight:500}.price{position:absolute;right:14px;top:50%;transform:translateY(-50%);min-width:98px;text-align:center;background:var(--burgundy);color:#fff;border-radius:18px;padding:9px 10px;font-size:14px;font-weight:850;box-shadow:0 3px 8px rgba(122,63,82,.22)}.variant{display:block;white-space:nowrap;line-height:1.55}.variant+.variant{border-top:1px solid rgba(255,255,255,.35);margin-top:3px;padding-top:3px}
-.cta-wrap{background:var(--sage-soft);border-radius:24px;padding:20px 18px;text-align:center;margin-top:34px}.cta-wrap strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:21px;color:var(--burgundy-dark);margin-bottom:5px}.cta-wrap p{margin:0 0 14px;color:var(--muted);font-size:14px}.cta{display:inline-block;background:var(--sage);color:#fff;text-decoration:none;font-weight:800;padding:13px 20px;border-radius:999px}.note{text-align:center;font-size:11px;color:var(--muted);margin-top:11px;line-height:1.45}
-@media(max-width:520px){.wrap{padding-left:10px;padding-right:10px}h1{font-size:31px}.product{padding:15px 104px 15px 16px;min-height:126px}.name{font-size:18px}.ingredients{font-size:12.5px}.price{right:10px;min-width:88px;padding:8px 8px;font-size:13px}}
-
-@media(max-width:520px){
-  .wrap{padding-left:12px;padding-right:12px}
-  .product{padding:18px 16px 16px;min-height:0}
-  .name{font-size:20px;line-height:1.2}
-  .meta{font-size:13px;line-height:1.4}
-  .ingredients{font-size:15.5px;line-height:1.58;margin-top:9px;color:#463c3d}
-  .price{position:static;transform:none;margin-top:13px;display:flex;gap:7px;flex-wrap:wrap;background:transparent;box-shadow:none;padding:0;text-align:left}
-  .variant{display:inline-block;background:var(--burgundy);color:#fff;border-radius:14px;padding:8px 11px;line-height:1.2}
-  .variant+.variant{border-top:0;margin-top:0;padding-top:8px}
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crocchette gatto | A Tutto Miao</title>
+<style>
+:root{
+  --cream:#f7f2ea;
+  --cream-2:#efe6d9;
+  --card:#fffdf9;
+  --burgundy:#7a3f52;
+  --burgundy-dark:#4b2a34;
+  --sage:#798066;
+  --sage-soft:#dfe4d5;
+  --pink:#e9c7cc;
+  --text:#3f3435;
+  --muted:#746a67;
+  --shadow:0 7px 22px rgba(82,58,49,.08);
 }
-</style></head><body><main class="wrap"><header class="hero"><div class="eyebrow">A Tutto Miao · Legnano</div><h1>Crocchette gatto</h1><p>Referenze, formati, prezzi e ingredienti principali.</p></header><section class="brand"><div class="brand-head"><h2>Farmina N&D</h2><div class="brand-sub">Gatto</div></div><div class="group-label">Ocean</div><div class="product"><div class="brandmini">Farmina N&D · Ocean</div><div class="name">Aringa e Arancia</div><div class="meta">Sterilizzato</div><div class="ingredients">Aringa 34%, proteina di aringa disidratata 32%, patata dolce, uova essiccate, olio di pesce.</div><div class="price"><span class="variant">1,5 kg · €30,90</span></div></div><div class="product"><div class="brandmini">Farmina N&D · Ocean</div><div class="name">Aringa e Arancia</div><div class="meta">Adulto</div><div class="ingredients">Aringa 32%, proteina di aringa disidratata 30%, patata dolce, olio di pesce, uova essiccate.</div><div class="price"><span class="variant">300 g · €7,90</span><span class="variant">1,5 kg · €30,90</span></div></div><div class="product"><div class="brandmini">Farmina N&D · Ocean</div><div class="name">Merluzzo, Farro, Avena e Arancia</div><div class="meta">Adulto</div><div class="ingredients">Merluzzo 27%, proteina di merluzzo disidratata 26%, olio di pesce, farro 10%, avena 10%.</div><div class="price"><span class="variant">300 g · €6,30</span></div></div><div class="group-label">Grain Free</div><div class="product"><div class="brandmini">Farmina N&D · Grain Free</div><div class="name">Pollo e Melograno</div><div class="meta">Adulto</div><div class="ingredients">Pollo disossato 30%, proteine di pollo disidratate 28%, patata dolce, grasso di pollo, uova essiccate.</div><div class="price"><span class="variant">300 g · €7,90</span><span class="variant">1,5 kg · €30,90</span></div></div><div class="product"><div class="brandmini">Farmina N&D · Grain Free</div><div class="name">Agnello e Mirtillo</div><div class="meta">Adulto</div><div class="ingredients">Agnello 28%, proteine di agnello disidratate 26%, patata dolce, grasso di pollo, uova essiccate.</div><div class="price"><span class="variant">300 g · €7,90</span></div></div><div class="product"><div class="brandmini">Farmina N&D · Grain Free</div><div class="name">Cinghiale e Mela</div><div class="meta">Adulto</div><div class="ingredients">Cinghiale 25%, proteine di cinghiale disidratate 23%, patata dolce, pollo disossato, proteine di pollo disidratate.</div><div class="price"><span class="variant">300 g · €7,90</span></div></div><div class="group-label">Pumpkin</div><div class="product"><div class="brandmini">Farmina N&D · Pumpkin</div><div class="name">Anatra, Zucca e Melone Cantalupo</div><div class="meta">Adulto</div><div class="ingredients">Anatra disossata 30%, proteine di anatra disidratate 28%, amido di piselli, grasso di pollo, zucca disidratata 5%.</div><div class="price"><span class="variant">300 g · €7,40</span></div></div><div class="product"><div class="brandmini">Farmina N&D · Pumpkin</div><div class="name">Cervo, Zucca e Mela</div><div class="meta">Adulto</div><div class="ingredients">Cervo 28%, proteine di cervo disidratate 26%, amido di piselli, grasso di pollo, zucca disidratata 5%.</div><div class="price"><span class="variant">300 g · €7,40</span></div></div><div class="group-label">Ancestral Grain</div><div class="product"><div class="brandmini">Farmina N&D · Ancestral Grain</div><div class="name">Agnello, Farro, Avena e Mirtillo</div><div class="meta">Adulto</div><div class="ingredients">Agnello 22%, proteine di agnello disidratate 20%, farro 10%, avena 10%, grasso di pollo.</div><div class="price"><span class="variant">300 g · €6,30</span></div></div><div class="product"><div class="brandmini">Farmina N&D · Ancestral Grain</div><div class="name">Pollo, Farro, Avena e Melograno</div><div class="meta">Adulto</div><div class="ingredients">Pollo disossato 24%, proteine di pollo disidratate 24%, farro 10%, avena 10%, grasso di pollo.</div><div class="price"><span class="variant">300 g · €6,30</span></div></div><div class="group-label">Quinoa</div><div class="product"><div class="brandmini">Farmina N&D · Quinoa</div><div class="name">Agnello, Quinoa, Mela Verde e Cocco</div><div class="meta">Senior</div><div class="ingredients">Agnello 20%, proteine di agnello disidratate 18%, amido di pisello, grasso di pollo, fibra di piselli, quinoa 8%.</div><div class="price"><span class="variant">300 g · €7,90</span></div></div></section><section class="brand"><div class="brand-head"><h2>Amanova</h2><div class="brand-sub">Gatto</div></div><div class="group-label">Low Grain</div><div class="product"><div class="brandmini">Amanova · Low Grain</div><div class="name">Pollo · Exquisite Chicken</div><div class="meta">Adulto</div><div class="ingredients">Pollo preparato in fresco 71%, piselli verdi interi, riso integrale, idrolizzato di fegato di pollo, lieviti.</div><div class="price"><span class="variant">1,5 kg · €17,15</span></div></div><div class="product"><div class="brandmini">Amanova · Low Grain</div><div class="name">Pollo · Exquisite Chicken</div><div class="meta">Sterilizzato</div><div class="ingredients">Pollo preparato in fresco 60%, proteina di pisello, proteina di riso, proteina di patata, lignocellulosa.</div><div class="price"><span class="variant">1,5 kg · €18,15</span></div></div><div class="group-label">Grain Free</div><div class="product"><div class="brandmini">Amanova · Grain Free</div><div class="name">Fish Delicacy</div><div class="meta">Sterilizzato</div><div class="ingredients">Pesce bianco preparato in fresco 53%, piselli verdi interi, proteina di patata, proteina di pisello, lignocellulosa.</div><div class="price"><span class="variant">1,5 kg · €20,15</span></div></div><div class="product"><div class="brandmini">Amanova · Grain Free</div><div class="name">Divine Rabbit</div><div class="meta">Adulto</div><div class="ingredients">Coniglio preparato in fresco 68%, piselli verdi interi, proteina di pisello, patata disidratata, farina di carrube.</div><div class="price"><span class="variant">1,5 kg · €22,15</span><span class="variant">4 kg · €56,45</span></div></div><div class="product"><div class="brandmini">Amanova · Grain Free</div><div class="name">Tacchino · Turkey Delight</div><div class="meta">Adulto</div><div class="ingredients">Tacchino preparato in fresco 71%, piselli verdi interi, patata disidratata, proteina di pisello, idrolizzato di fegato di tacchino.</div><div class="price"><span class="variant">1,5 kg · €20,15</span></div></div></section><section class="brand"><div class="brand-head"><h2>Leonardo</h2><div class="brand-sub">Gatto</div></div><div class="group-label">Fresh Meat · Grain Free</div><div class="product"><div class="brandmini">Leonardo · Fresh Meat · Grain Free</div><div class="name">Fresh Beef</div><div class="meta">Adulto</div><div class="ingredients">Carne, fegato e rene di manzo 43%, carne di pollame fresca 42%, farina di piselli, amaranto, krill 1,7%.</div><div class="price"><span class="variant">250 g · €6,90</span></div></div><div class="product"><div class="brandmini">Leonardo · Fresh Meat · Grain Free</div><div class="name">Fresh Salmon</div><div class="meta">Adulto</div><div class="ingredients">Salmone fresco 43%, carne di pollame fresca 42%, farina di piselli, amaranto, krill 1,7%.</div><div class="price"><span class="variant">250 g · €6,90</span></div></div><div class="product"><div class="brandmini">Leonardo · Fresh Meat · Grain Free</div><div class="name">Fresh Duck</div><div class="meta">Adulto</div><div class="ingredients">Carne di anatra fresca 43%, carne di pollame fresca 42%, farina di piselli, amaranto, krill 1,7%.</div><div class="price"><span class="variant">250 g · €6,90</span></div></div><div class="group-label">Classic</div><div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Adult Lamb</div><div class="meta">Adulto</div><div class="ingredients">Carne, fegato e polmone di agnello 30%, proteine di agnello 14%, proteine di pollame 14%, riso, granturco.</div><div class="price"><span class="variant">300 g · €4,80</span></div></div><div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Adult Poultry</div><div class="meta">Adulto</div><div class="ingredients">La referenza “Adult Poultry” non compare più con questo nome nel catalogo ufficiale Leonardo attuale: composizione da verificare sulla confezione/listino.</div><div class="price"><span class="variant">300 g · €4,80</span></div></div><div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Adult Duck</div><div class="meta">Adulto</div><div class="ingredients">Carne di pollame fresca 30%, proteine di anatra 18%, riso, proteine di pollame 10%, fecola di patate.</div><div class="price"><span class="variant">300 g · €4,80</span></div></div><div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Adult Fish</div><div class="meta">Adulto</div><div class="ingredients">Salmone fresco 30%, riso, farina di pesce marino 12,5%, proteine di pollame 12,5%, granturco.</div><div class="price"><span class="variant">300 g · €4,80</span></div></div><div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Adult Light Sterilised</div><div class="meta">Sterilizzato</div><div class="ingredients">Carne di pollame fresca 30%, proteine di pollame 23%, riso, granturco, farina di pesce marino 9%.</div><div class="price"><span class="variant">300 g · €4,80</span></div></div><div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Senior</div><div class="meta">Senior</div><div class="ingredients">Carne di pollame fresca 30%, riso, proteine di pollame 15%, granturco, fegato di pollame.</div><div class="price"><span class="variant">300 g · €5,30</span></div></div><div class="group-label">Grain Free</div><div class="product"><div class="brandmini">Leonardo · Grain Free</div><div class="name">GF Maxi</div><div class="meta">Adulto</div><div class="ingredients">Carne di pollame fresca 30%, proteine di pollame 21%, amaranto 15%, farina di piselli, fecola di patate.</div><div class="price"><span class="variant">300 g · €7,00</span></div></div><div class="product"><div class="brandmini">Leonardo · Grain Free</div><div class="name">GF Poultry</div><div class="meta">Adulto</div><div class="ingredients">Carne di pollame fresca 30%, proteine di pollame 22%, amaranto 15%, fecola di patate, farina di piselli.</div><div class="price"><span class="variant">300 g · €6,30</span></div></div><div class="product"><div class="brandmini">Leonardo · Grain Free</div><div class="name">GF Salmon</div><div class="meta">Adulto</div><div class="ingredients">Salmone fresco 30%, farina di pesce marino 20%, amaranto 15%, farina di piselli, fecola di patate.</div><div class="price"><span class="variant">300 g · €6,30</span></div></div></section><div class="cta-wrap"><strong>Vuoi sapere se è disponibile?</strong><p>Scrivici prima di passare in negozio e ti confermiamo la disponibilità.</p><a class="cta" href="https://wa.me/393921187250">Chiedi disponibilità su WhatsApp</a></div></main></body></html>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  background:linear-gradient(180deg,var(--cream) 0%,#fbf8f3 100%);
+  color:var(--text);
+}
+.wrap{max-width:760px;margin:0 auto;padding:26px 14px 52px}
+.hero{padding:8px 8px 22px;text-align:center}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-weight:800}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:34px;line-height:1.05;margin:8px 0 8px;color:var(--burgundy-dark)}
+.hero p{margin:0;color:var(--muted);font-size:15px}
+.brand{margin:22px 0 34px}
+.brand-head{display:flex;align-items:end;justify-content:space-between;padding:0 6px 9px;border-bottom:2px solid var(--pink);margin-bottom:12px}
+.brand h2{font-family:Georgia,"Times New Roman",serif;font-size:27px;margin:0;color:var(--burgundy-dark)}
+.brand-sub{font-size:12px;color:var(--sage);font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.group-label{margin:18px 7px 8px;font-size:13px;color:var(--sage);font-weight:850;text-transform:uppercase;letter-spacing:.09em}
+.product{
+  position:relative;
+  background:var(--card);
+  border:1px solid #eadfd4;
+  border-radius:22px;
+  padding:17px 118px 17px 18px;
+  margin:10px 0;
+  min-height:92px;
+  box-shadow:var(--shadow);
+}
+.product .brandmini{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--burgundy);font-weight:850;margin-bottom:5px}
+.product .name{font-family:Georgia,"Times New Roman",serif;font-size:19px;font-weight:800;color:var(--burgundy-dark);line-height:1.15}
+.product .meta{font-size:13px;color:var(--muted);font-style:italic;line-height:1.35;margin-top:5px}
+.price{
+  position:absolute;right:14px;top:50%;transform:translateY(-50%);
+  min-width:88px;text-align:center;
+  background:var(--burgundy);color:white;
+  border-radius:999px;padding:10px 12px;
+  font-size:15px;font-weight:850;
+  box-shadow:0 3px 8px rgba(122,63,82,.22);
+}
+.price .size{display:block;font-size:11px;font-weight:650;opacity:.92;margin-bottom:1px}
+.price.multi{border-radius:18px;padding:8px 11px;min-width:105px}
+.price.multi .variant{display:block;white-space:nowrap;font-size:13px;line-height:1.55}
+.price.multi .variant + .variant{border-top:1px solid rgba(255,255,255,.35);margin-top:3px;padding-top:3px}
+.cta-wrap{background:var(--sage-soft);border-radius:24px;padding:20px 18px;text-align:center;margin-top:34px}
+.cta-wrap strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:21px;color:var(--burgundy-dark);margin-bottom:5px}
+.cta-wrap p{margin:0 0 14px;color:var(--muted);font-size:14px}
+.cta{display:inline-block;background:var(--sage);color:#fff;text-decoration:none;font-weight:800;padding:13px 20px;border-radius:999px}
+.navlinks{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}.navbtn{display:inline-block;color:var(--burgundy);font-weight:800;text-decoration:none;padding:10px 13px;border:1px solid var(--pink);border-radius:999px;background:var(--card)}.note{text-align:center;font-size:12px;color:var(--muted);margin-top:10px}
+@media(max-width:520px){
+  .wrap{padding-left:10px;padding-right:10px}
+  h1{font-size:31px}
+  .product{padding:15px 102px 15px 16px;min-height:88px}
+  .product .name{font-size:18px}
+  .price{right:10px;min-width:84px;padding:9px 9px}
+}
+</style>
+</head>
+<body>
+<main class="wrap" id="top">
+  <div class="navlinks"><a class="navbtn" href="index.html">← Torna alla Home</a></div>
+  <header class="hero">
+    <div class="eyebrow">A Tutto Miao · Legnano</div>
+    <h1>Crocchette gatto</h1>
+    <p>Una selezione ragionata di referenze disponibili in negozio.</p>
+  </header>
+
+  <section class="brand">
+    <div class="brand-head"><h2>Farmina N&amp;D</h2><div class="brand-sub">Gatto</div></div>
+    <div class="group-label">Ocean</div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Ocean</div><div class="name">Aringa e Arancia</div><div class="meta">Sterilizzato</div><div class="price"><span class="size">1,5 kg</span>€30,90</div></div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Ocean</div><div class="name">Aringa e Arancia</div><div class="meta">Adulto</div><div class="price"><span class="size">1,5 kg</span>€30,90</div></div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Ocean</div><div class="name">Aringa e Arancia</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€7,90</div></div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Ocean</div><div class="name">Merluzzo, Farro, Avena e Arancia</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€6,30</div></div>
+
+    <div class="group-label">Grain Free</div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Grain Free</div><div class="name">Pollo e Melograno</div><div class="meta">Adulto</div><div class="price multi"><span class="variant">300 g · €7,90</span><span class="variant">1,5 kg · €30,90</span></div></div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Grain Free</div><div class="name">Agnello e Mirtillo</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€7,90</div></div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Grain Free</div><div class="name">Cinghiale e Mela</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€7,90</div></div>
+
+    <div class="group-label">Pumpkin</div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Pumpkin</div><div class="name">Anatra, Zucca e Melone Cantalupo</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€7,40</div></div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Pumpkin</div><div class="name">Cervo, Zucca e Mela</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€7,40</div></div>
+
+    <div class="group-label">Ancestral Grain</div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Ancestral Grain</div><div class="name">Agnello, Farro, Avena e Mirtillo</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€6,30</div></div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Ancestral Grain</div><div class="name">Pollo, Farro, Avena e Melograno</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€6,30</div></div>
+
+    <div class="group-label">Quinoa</div>
+    <div class="product"><div class="brandmini">Farmina N&amp;D · Quinoa</div><div class="name">Agnello, Quinoa, Mela Verde e Cocco</div><div class="meta">Senior</div><div class="price"><span class="size">300 g</span>€7,90</div></div>
+  </section>
+
+  <section class="brand">
+    <div class="brand-head"><h2>Amanova</h2><div class="brand-sub">Gatto</div></div>
+    <div class="group-label">Low Grain</div>
+    <div class="product"><div class="brandmini">Amanova · Low Grain</div><div class="name">Pollo</div><div class="meta">Adulto</div><div class="price"><span class="size">1,5 kg</span>€17,15</div></div>
+    <div class="product"><div class="brandmini">Amanova · Low Grain</div><div class="name">Pollo</div><div class="meta">Sterilizzato</div><div class="price"><span class="size">1,5 kg</span>€18,15</div></div>
+
+    <div class="group-label">Grain Free</div>
+    <div class="product"><div class="brandmini">Amanova · Grain Free</div><div class="name">Fish Delicacy</div><div class="meta">Sterilizzato</div><div class="price"><span class="size">1,5 kg</span>€20,15</div></div>
+    <div class="product"><div class="brandmini">Amanova · Grain Free</div><div class="name">Divine Rabbit</div><div class="meta">Adulto</div><div class="price multi"><span class="variant">1,5 kg · €22,15</span><span class="variant">4 kg · €56,45</span></div></div>
+    <div class="product"><div class="brandmini">Amanova · Grain Free</div><div class="name">Tacchino</div><div class="meta">Adulto</div><div class="price"><span class="size">1,5 kg</span>€20,15</div></div>
+  </section>
+
+  <section class="brand">
+    <div class="brand-head"><h2>Leonardo</h2><div class="brand-sub">Gatto</div></div>
+    <div class="group-label">Fresh Meat · Grain Free</div>
+    <div class="product"><div class="brandmini">Leonardo · Fresh Meat</div><div class="name">Fresh Beef</div><div class="meta">Grain Free</div><div class="price"><span class="size">250 g</span>€6,90</div></div>
+    <div class="product"><div class="brandmini">Leonardo · Fresh Meat</div><div class="name">Fresh Salmon</div><div class="meta">Grain Free</div><div class="price"><span class="size">250 g</span>€6,90</div></div>
+    <div class="product"><div class="brandmini">Leonardo · Fresh Meat</div><div class="name">Fresh Duck</div><div class="meta">Grain Free</div><div class="price"><span class="size">250 g</span>€6,90</div></div>
+
+    <div class="group-label">Classic</div>
+    <div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Adult Lamb</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€4,80</div></div>
+    <div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Adult Poultry</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€4,80</div></div>
+    <div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Adult Duck</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€4,80</div></div>
+    <div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Adult Fish</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€4,80</div></div>
+    <div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Adult Light Sterilised</div><div class="meta">Sterilizzato</div><div class="price"><span class="size">300 g</span>€4,80</div></div>
+    <div class="product"><div class="brandmini">Leonardo · Classic</div><div class="name">Senior</div><div class="meta">Senior</div><div class="price"><span class="size">300 g</span>€5,30</div></div>
+
+    <div class="group-label">Grain Free</div>
+    <div class="product"><div class="brandmini">Leonardo · Grain Free</div><div class="name">GF Maxi</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€7,00</div></div>
+    <div class="product"><div class="brandmini">Leonardo · Grain Free</div><div class="name">GF Poultry</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€6,30</div></div>
+    <div class="product"><div class="brandmini">Leonardo · Grain Free</div><div class="name">GF Salmon</div><div class="meta">Adulto</div><div class="price"><span class="size">300 g</span>€6,30</div></div>
+  </section>
+
+  <div class="cta-wrap">
+    <strong>Vuoi sapere se è disponibile?</strong>
+    <p>Scrivici prima di passare in negozio e ti confermiamo la disponibilità.</p>
+    <a class="cta" href="https://wa.me/393921187250">Chiedi disponibilità su WhatsApp</a>
+  </div>
+  <div class="navlinks"><a class="navbtn" href="#top">↑ Torna su</a><a class="navbtn" href="index.html">← Torna alla Home</a></div>
+  <div class="note">Prezzi e disponibilità possono variare.</div>
+</main>
+</body>
+</html>

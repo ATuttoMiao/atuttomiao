@@ -28,13 +28,14 @@ h1{font-family:Georgia,"Times New Roman",serif;font-size:34px;line-height:1.05;m
 .cta-wrap strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:21px;color:var(--burgundy-dark);margin-bottom:5px}
 .cta-wrap p{margin:0 0 14px;color:var(--muted);font-size:14px}
 .cta{display:inline-block;background:var(--sage);color:white;text-decoration:none;font-weight:800;padding:13px 20px;border-radius:999px}
-.back{display:inline-block;margin-top:18px;color:var(--burgundy);font-weight:750;text-decoration:none}
+.navlinks{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}.back{display:inline-block;color:var(--burgundy);font-weight:750;text-decoration:none;padding:10px 13px;border:1px solid var(--pink);border-radius:999px;background:var(--card)}
 .note{text-align:center;font-size:12px;color:var(--muted);margin-top:10px}
 @media(max-width:520px){.wrap{padding-left:10px;padding-right:10px}h1{font-size:31px}.product{padding:15px 102px 15px 16px;min-height:88px}.name{font-size:18px}.price{right:10px;min-width:84px;padding:9px}}
 </style>
 </head>
 <body>
-<main class="wrap">
+<main class="wrap" id="top">
+<div class="navlinks"><a class="back" href="index.html">← Torna alla Home</a></div>
 <header class="hero">
 <div class="eyebrow">A Tutto Miao · Legnano</div>
 <h1>Snack gatto</h1>
@@ -310,7 +311,7 @@ h1{font-family:Georgia,"Times New Roman",serif;font-size:34px;line-height:1.05;m
 <p>Scrivici prima di passare in negozio e ti confermiamo la disponibilità.</p>
 <a class="cta" href="https://wa.me/393921187250">Chiedi disponibilità su WhatsApp</a>
 </div>
-<div style="text-align:center"><a class="back" href="index.html">← Torna alla Home</a></div>
+<div class="navlinks"><a class="back" href="#top">↑ Torna su</a><a class="back" href="index.html">← Torna alla Home</a></div>
 <div class="note">Prezzi e disponibilità possono variare.</div>
 </main>
 </body>
